@@ -1,0 +1,12 @@
+name: CI
+on:
+    push:
+        branches:
+            -main    
+jobs:
+    CreandoAmbiente:
+        runs-on: ubuntu-latest
+        steps:
+            -uses: actions/checkout@V3
+            -name: Primer CI
+                run: echo Primer CI
