@@ -8,9 +8,7 @@ jobs:
   build-test:
     runs-on: ubuntu-latest
     steps:
-      - name: Creamos Repositorio en Servidor
       - uses: actions/checkout@v3
-      - name: PHP_Composer
       - uses: php-actions/composer@v6
       - name: PHPUnit 
         uses: php-actions/phpunit@master
